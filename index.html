@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+    </style>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#10141E]">
+    <main class="h-screen flex justify-center items-center">
+        <div class="relative bg-[#161D2F] w-100 p-8 rounded-[20px] flex flex-col items-start gap-8 mx-6">
+            <img src="./src/icons/logo.svg" alt="Logo" class="absolute top-[-20%] left-[50%] translate-[-50%] w-8">
+
+            <h2 class="text-white text-[32px] font-light capitalize">sign up</h2>
+
+            <div class="flex flex-col gap-8 w-full">
+                <input type="email" placeholder="Email address" class="auth-field">
+                <input type="password" placeholder="Password" class="auth-field">
+                <input type="password" placeholder="Repeat Password" class="auth-field">
+            </div>
+
+            <button class="bg-[#FC4747] rounded-md py-3.5 w-full text-white font-light flex justify-center
+            items-center transition-all duration-75 ease-in-out hover:bg-white hover:text-black hover:font-normal">
+                <a href="./main.html" class="first-letter:capitalize w-full h-full">create an account</a>
+            </button>
+
+            <div class="flex justify-center items-center gap-2 w-full">
+                <span class="text-white font-light first-letter:capitalize">already have an account?</span>
+                <a href="./login.html" class="text-[#FC4747] cursor-pointer hover:underline font-light first-letter:capitalize">login</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

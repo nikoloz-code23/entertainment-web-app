@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+    </style>
+    <title>Document</title>
+</head>
+<body class="bg-(--background-color)">
+    <main class="h-screen grid sm:grid-cols-[max-content_1fr]">
+        <aside class="sticky sm:m-8 sm:justify-self-center sm:w-24">
+            <div class="flex flex-row justify-between items-center bg-[#161D2F] p-5 h-14 sm:h-full sm:flex-col sm:p-8 sm:rounded-[20px]">
+                <img src="./src/icons/logo.svg" alt="Logo" class="sm:hidden w-7">
+                
+                <div class="flex items-center sm:block">
+                    <img src="./src/icons/logo.svg" alt="Logo" class="hidden sm:inline w-8">
+                    
+                    <nav class="flex items-center gap-6 sm:mt-18 sm:flex-col sm:gap-10">
+                        <a href="#">
+                            <img src="./src/icons/icon-nav-home.svg" alt="Home" class="brightness-300 min-w-4 sm:w-5">
+                        </a>
+                        <a href="#">
+                            <img src="./src/icons/icon-nav-movies.svg" alt="Movies" class="min-w-4 sm:w-5">
+                        </a>
+                        <a href="#">
+                            <img src="./src/icons/icon-nav-tv-series.svg" alt="TV Series" class="min-w-4 sm:w-5">
+                        </a>
+                        <a href="#">
+                            <img src="./src/icons/icon-nav-bookmark.svg" alt="Bookmarks" class="min-w-4 sm:w-5">
+                        </a>
+                    </nav>
+                </div>
+                
+                <a href="#" class="sm:mt-auto">
+                    <img src="./src/img/image-avatar.png" alt="User Avatar" class="w-6 sm:min-w-10 outline outline-white rounded-full">
+                </a>
+            </div>
+        </aside>
+
+        <div class="overflow-x-hidden pb-19">
+            <section role="search" class="flex items-center flex-row h-8 text-white gap-4 m-6 ml-4 mr-4 sm:m-0 sm:mt-16 sm:mb-10 sm:gap-8">
+                <button>
+                    <img class="w-6 sm:w-8" src="./src/icons/icon-search.svg" alt="Search button.">
+                </button>
+
+                <form class="w-full pr-9">
+                    <label for="search"></label>
+                    <input class="input" type="text" name="search" id="search" placeholder="Search for movies or TV series">
+                </form>
+            </section>
+            
+            <h1 class="text-[2rem] font-light capitalize text-white mb-6 ml-4 sm:ml-0">trending</h1>
+            
+            <section role="trending" class="whitespace-nowrap overflow-y-hidden overflow-x-scroll ml-4 mr-4 sm:m-0">
+                <span class="trending-card">
+                    <div class="play-overlay">
+                        <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                            <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                            <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-title-shadow"></div>
+                    
+                    <img src="./src/thumbnails/beyond-earth/trending/large.jpg" alt="Thumbnail of Beyond Earth" class="w-full h-full object-cover rounded-lg">
+                    
+                    <div class="trending-info">
+                        <div class="flex justify-start items-center gap-2">
+                            <span class="trending-tags">2019</span>
+                            <span class="spacer"></span>
+                            <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                            <span class="trending-tags capitalize">movie</span>
+                            <span class="spacer"></span>
+                            <span class="trending-tags uppercase">pg</span>
+                        </div>
+                        
+                        <h3 class="trending-title">beyond earth</h3>
+                    </div>
+                    
+                    <button class="bookmark-button mr-6 ml-6 mt-4 mb-4">
+                        <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                    </button>
+
+                </span>
+
+                <span class="trending-card">
+                    <div class="play-overlay">
+                        <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                            <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                            <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trending-title-shadow"></div>
+                    
+                    <img src="./src/thumbnails/bottom-gear/trending/large.jpg" alt="Thumbnail of Bottom Gear" class="w-full h-full object-cover rounded-lg">
+                    
+                    <div class="trending-info">
+                        <div class="flex justify-start items-center gap-2">
+                            <span class="trending-tags">2021</span>
+                            <span class="spacer"></span>
+                            <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                            <span class="trending-tags capitalize">movie</span>
+                            <span class="spacer"></span>
+                            <span class="trending-tags uppercase">pg</span>
+                        </div>
+                        
+                        <h3 class="trending-title">bottom gear</h3>
+
+                    </div>
+                    
+                    <button class="bookmark-button mr-6 ml-6 mt-4 mb-4">
+                        <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                    </button>
+
+                </span>
+
+                <span class="trending-card">
+                    <div class="play-overlay">
+                        <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                            <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                            <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-title-shadow"></div>
+                    
+                    <img src="./src/thumbnails/undiscovered-cities/trending/large.jpg" alt="Thumbnail of Undiscovered Cities" class="w-full h-full object-cover rounded-lg">
+                    
+                    <div class="trending-info">
+                        <div class="flex justify-start items-center gap-2">
+                            <span class="trending-tags">2019</span>
+                            <span class="spacer"></span>
+                            <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                            <span class="trending-tags capitalize">TV series</span>
+                            <span class="spacer"></span>
+                            <span class="trending-tags uppercase">e</span>
+                        </div>
+                        
+                        <h3 class="trending-title">undiscovered cities</h3>
+
+                    </div>
+                    
+                    <button class="bookmark-button mr-6 ml-6 mt-4 mb-4">
+                        <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                    </button>
+
+                </span>
+
+                <span class="trending-card">
+                    <div class="play-overlay">
+                        <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                            <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                            <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-title-shadow"></div>
+                    
+                    <img src="./src/thumbnails/beyond-earth/trending/large.jpg" alt="Thumbnail of Beyond Earth" class="w-full h-full object-cover rounded-lg">
+                    
+                    <div class="trending-info">
+                        <div class="flex justify-start items-center gap-2">
+                            <span class="trending-tags">2019</span>
+                            <span class="spacer"></span>
+                            <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                            <span class="trending-tags capitalize">movie</span>
+                            <span class="spacer"></span>
+                            <span class="trending-tags uppercase">pg</span>
+                        </div>
+                        
+                        <h3 class="trending-title">beyond earth</h3>
+                    </div>
+                    
+                    <button class="bookmark-button mr-6 ml-6 mt-4 mb-4">
+                        <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                    </button>
+
+                </span>
+
+                <span class="trending-card">
+                    <div class="play-overlay">
+                        <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                            <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                            <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trending-title-shadow"></div>
+                    
+                    <img src="./src/thumbnails/bottom-gear/trending/large.jpg" alt="Thumbnail of Bottom Gear" class="w-full h-full object-cover rounded-lg">
+                    
+                    <div class="trending-info">
+                        <div class="flex justify-start items-center gap-2">
+                            <span class="trending-tags">2021</span>
+                            <span class="spacer"></span>
+                            <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                            <span class="trending-tags capitalize">movie</span>
+                            <span class="spacer"></span>
+                            <span class="trending-tags uppercase">pg</span>
+                        </div>
+                        
+                        <h3 class="trending-title">bottom gear</h3>
+
+                    </div>
+                    
+                    <button class="bookmark-button mr-6 ml-6 mt-4 mb-4">
+                        <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                    </button>
+
+                </span>
+
+                <span class="trending-card">
+                    <div class="play-overlay">
+                        <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                            <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                            <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-title-shadow"></div>
+                    
+                    <img src="./src/thumbnails/undiscovered-cities/trending/large.jpg" alt="Thumbnail of Undiscovered Cities" class="w-full h-full object-cover rounded-lg">
+                    
+                    <div class="trending-info">
+                        <div class="flex justify-start items-center gap-2">
+                            <span class="trending-tags">2019</span>
+                            <span class="spacer"></span>
+                            <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                            <span class="trending-tags capitalize">TV series</span>
+                            <span class="spacer"></span>
+                            <span class="trending-tags uppercase">e</span>
+                        </div>
+                        
+                        <h3 class="trending-title">undiscovered cities</h3>
+
+                    </div>
+                    
+                    <button class="bookmark-button mr-6 ml-6 mt-4 mb-4">
+                        <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                    </button>
+
+                </span>
+            </section>
+            
+            
+            <h1 class="font-light text-[2rem] text-white ml-4 mr-4 mt-10 mb-8 first-letter:capitalize sm:ml-0 sm:mr-0">recommended for you</h1>
+            <section role="recommended" class="grid grid-cols-2 items-center ml-4 mr-4 gap-4 sm:grid-cols-4 2xl:grid-cols-6 sm:mr-10 sm:ml-0 sm:gap-10">
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/the-great-lands/regular/large.jpg" alt="The Great Lands thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2019</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">the great lands</h3>
+
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+                        
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/the-diary/regular/large.jpg" alt="The Diary thumbnail.">
+                        
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2019</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">the diary</h3>
+
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/earths-untouched/regular/large.jpg" alt="Earth's Untouched thumbnail.">
+                    
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2017</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">18+</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">earth's untouched</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/no-land-beyond/regular/large.jpg" alt="No Land Beyond thumbnail.">
+                        
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2019</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">e</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">no land beyond</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/during-the-hunt/regular/large.jpg" alt="During The Hunt thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2016</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">during the hunt</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/autosport-the-series/regular/large.jpg" alt="Autosport The Series thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2016</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">autosport the series</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/same-answer-2/regular/large.jpg" alt="Same Answer 2 thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2017</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">e</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">same answer II</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/below-echo/regular/large.jpg" alt="Below Echo thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2016</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">below echo</h3>
+                </div>
+                
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/the-great-lands/regular/large.jpg" alt="The Great Lands thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2019</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">the great lands</h3>
+
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+                        
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/the-diary/regular/large.jpg" alt="The Diary thumbnail.">
+                        
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2019</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">the diary</h3>
+
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/earths-untouched/regular/large.jpg" alt="Earth's Untouched thumbnail.">
+                    
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2017</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">18+</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">earth's untouched</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/no-land-beyond/regular/large.jpg" alt="No Land Beyond thumbnail.">
+                        
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2019</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">e</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">no land beyond</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/during-the-hunt/regular/large.jpg" alt="During The Hunt thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2016</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">during the hunt</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/autosport-the-series/regular/large.jpg" alt="Autosport The Series thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2016</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">autosport the series</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/same-answer-2/regular/large.jpg" alt="Same Answer 2 thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2017</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-movie.svg" alt="Movie Icon">
+                        <span class="recommended-tags capitalize">movie</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">e</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">same answer II</h3>
+                </div>
+
+                <div class="recommended-card">
+                    <div class="recommend-image-wrapper">
+                        <div class="play-overlay">
+                            <div class="flex p-2.5 bg-[rgba(255,255,255,0.25)] rounded-[28px]">
+                                <img src="./src/icons/icon-play.svg" alt="Play button icon.">
+                                <span class="capitalize text-white text-[1.125rem] font-medium ml-4 mr-4">play</span>
+                            </div>
+                        </div>
+
+                        <img class="rounded-lg mb-2" src="./src/thumbnails/below-echo/regular/large.jpg" alt="Below Echo thumbnail.">
+
+                        <button class="bookmark-button">
+                            <img class="bookmark-icon" src="./src/icons/icon-bookmark-empty.svg" alt="Bookmark icon">
+                        </button>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-2">
+                        <span class="recommended-tags">2016</span>
+                        <span class="spacer"></span>
+                        <img src="./src/icons/icon-category-tv.svg" alt="TV Icon">
+                        <span class="trending-tags capitalize">TV series</span>
+                        <span class="spacer"></span>
+                        <span class="recommended-tags uppercase">pg</span>
+                    </div>
+                        
+                    <h3 class="font-medium text-[1.125rem] capitalize w-fit text-white hover:underline hover:cursor-pointer">below echo</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

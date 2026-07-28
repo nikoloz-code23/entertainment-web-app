@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+    --background-color: #10141E; 
+    --font-outfit: "Outfit", sans-serif;
+}
+
+* {
+    @apply font-outfit;
+}
+
+nav a {
+    @apply transition-all duration-75 ease-in-out;
+}
+
+nav a:hover {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(82%) saturate(4080%) hue-rotate(337deg) brightness(101%) contrast(96%);
+}
+
+a, button {
+    @apply cursor-pointer;
+}
+
+.auth-field {
+    @apply placeholder:text-white/50 placeholder:font-light w-full border-b border-[#5A698F]/50 text-white pb-4 px-4 transition-all duration-300 ease-in-out outline-none focus:border-b focus:border-[#5A698F] caret-[#fb4545];
+}
+
+.input {
+    @apply font-light w-full text-[1rem] pb-2 pt-2 outline-none focus:border-b focus:border-[#5A698F] caret-[#fb4545] sm:text-2xl;
+}
+
+.spacer {
+    @apply w-0.75 h-0.75 inline-block border-white bg-white opacity-50 border rounded-full;
+}
+
+.play-overlay {
+    @apply flex justify-center items-center absolute w-full h-full bg-black/50 rounded-lg opacity-0 transition-all duration-75 ease-in-out;
+}
+
+.bookmark-button {
+    @apply absolute top-0 right-0 w-8 h-8 bg-black/50 rounded-full transition-all duration-75 ease-in-out m-2 sm:m-4;
+}
+
+.bookmark-icon {
+    @apply m-auto transition-all duration-75 ease-in-out;
+}
+
+.bookmark-button:hover {
+    & .bookmark-icon {
+        @apply invert;
+    }
+    @apply bg-white;
+}
+
+.trending-info {
+    @apply absolute bottom-0 m-4 mb-3.5 sm:m-6;
+}
+
+.trending-tags {
+    @apply text-[0.8rem] sm:text-[15px] font-light text-white opacity-75;
+}
+
+.trending-title {
+    @apply font-medium text-[1.05rem] capitalize text-white sm:text-2xl;
+}
+
+.trending-card {
+    @apply w-60 h-35 relative inline-block mr-4 sm:w-117.5 sm:h-57.5 sm:mr-10 cursor-pointer;
+}
+
+.trending-title-shadow {
+    @apply absolute w-full h-25 bottom-0 bg-linear-to-b from-0% to-[rgba(0,0,0,.75)] rounded-lg;
+}
+
+.recommended-wrapper {
+    @apply flex justify-center items-center;
+}
+
+.recommended-tags {
+    @apply text-[13px] font-light text-white opacity-75;
+}
+
+.recommended-card {
+    @apply m-auto relative w-full sm:w-70;
+}
+
+.recommend-image-wrapper {
+    @apply w-full relative cursor-pointer;
+}
+
+.play-wrapper {
+    @apply flex items-center absolute w-full h-full bg-[rgba(0,0,0,.5)];
+}
+
+.trending-card:hover, .recommend-image-wrapper:hover {
+    & .play-overlay {
+        @apply opacity-100
+    }
+}
